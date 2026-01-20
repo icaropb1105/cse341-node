@@ -1,5 +1,42 @@
-### Get all contacts
+### GET ALL CONTACTS (LOCAL)
 GET http://localhost:8080/contacts
 
-### Get contact by id
+### GET CONTACT BY ID (LOCAL)
 GET http://localhost:8080/contacts/69658f0abab5a34dbcf72ac1
+
+
+
+### GET ALL CONTACTS (RENDER)
+GET https://cse341-node-render.onrender.com/contacts
+
+
+
+### POST NEW CONTACT
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ana",
+  "lastName": "Silva",
+  "email": "ana@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "2000-08-20"
+}
+
+
+
+### PUT UPDATE CONTACT
+PUT http://localhost:8080/contacts/696ac102b9a5088aaa0e5ee5
+Content-Type: application/json
+
+{
+  "firstName": "Ana",
+  "lastName": "Souza",
+  "email": "ana@outlook.com",
+  "favoriteColor": "Green",
+  "birthday": "2000-08-20"
+}
+
+
+### DELETE CONTACT
+DELETE http://localhost:8080/contacts/696ac102b9a5088aaa0e5ee5
